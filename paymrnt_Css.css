@@ -1,0 +1,70 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-image: url(images/OIP.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="number"], input[type="date"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+.sbbtn {
+    height: 30px;
+    width: 90px;
+    border-radius: 50px;
+    background-color: white;
+    margin: auto;
+    color: white;
+    border: none;
+    background: linear-gradient(45deg, #fb30e7, #2bb3a6);
+    margin: auto;
+}
+.fieldouters {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 30px 10px;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+.sngtxts {
+    width: auto;
+}
+
+.ermsgs {
+    grid-column: 1 / span 2;
+    font-size: 10px;
+    color: red;
+}

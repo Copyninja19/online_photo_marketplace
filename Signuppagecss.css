@@ -1,0 +1,139 @@
+﻿
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'lato',sans-serif;
+}
+
+.outer-box {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left,#3ed8ff,#a8f5ff);
+}
+
+.heading {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: auto 120px;
+    height: 70px;
+    align-items: center;
+}
+
+.inner-box {
+    margin: auto;
+    width: 450px;
+    grid-template-columns: auto;
+    position: relative;
+    transform: translate(-50%);
+    padding: 20px 40px;
+    background-color: #ffffff09;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #2773a5;
+    z-index: 2;
+    top: 50px;
+    left: 200px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #212121;
+}
+
+.header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.Singup-body {
+    margin: 25px 0;
+}
+
+    .Singup-body p {
+        margin: 27px 0;
+    }
+
+        .Singup-body p label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .Singup-body p input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #cccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            margin: 4px;
+        }
+
+            .Singup-body p input[type="submit"] {
+                background-color: #3498db;
+                border: none;
+                color: white;
+                cursor: pointer;
+            }
+
+                .Singup-body p input[type="submit"]:hover {
+                    background-color: #2773a5;
+                }
+
+.singupfooter {
+    color: #555;
+    text-align: center;
+}
+
+    .singupfooter p a {
+        color: #2773a5;
+    }
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top right, #ffffff33, #ffffffff);
+    position: absolute;
+}
+
+.c1 {
+    top: 100px;
+    left: 40px;
+}
+
+.c2 {
+    bottom: 200px;
+    right: 50px;
+}
+
+.sngbtn {
+    height: 50px;
+    width: 100px;
+    background: linear-gradient(45deg, #666271, #d4997e);
+    border: none;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+}
+
+.logbtn {
+    z-index: 1;
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 25px;
+    color: #666271;
+    box-shadow: 0px 0px 10px #0000004f;
+}
+
+.ermsgs {
+    grid-column: 1 / span 2;
+    font-size: 20px;
+    color: red;
+}

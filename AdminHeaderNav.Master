@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminHeaderNav.master.cs" Inherits="Online_photoGallery_admin.AdminHeaderNav" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="AdminHeaderNavcss.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="screen">
+            <div class="header">
+                <h1>Online PhotoGallery</h1>
+                <div class="disimgdiv3"></div>
+            </div>
+            <div class="nav">
+                <%--<asp:Button ID="dashbtn" CssClass="navbtns" runat="server" Text="Dashboard" />--%>
+                <asp:Button ID="uploadbtn" CssClass="navbtns" runat="server" Text="Your Uploads" OnClick="uploadbtn_Click" />
+                <asp:Button ID="logbtn" CssClass="navbtns" runat="server" Text="Logout" OnClick="logbtn_Click"/>
+
+
+                <div class="disimgdiv1"></div>
+                <div class="disimgdiv2"></div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

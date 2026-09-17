@@ -1,0 +1,445 @@
+﻿.uploadscreen{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 40px auto;
+    overflow:hidden;
+}
+.uploadheader {
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 100px;
+}
+.upHeaderBtns{
+   height:30px;
+   width:70px;
+   border:none;
+   background-color:white;
+   border-radius:25px;
+   margin:auto;
+
+}
+.contant {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 400px 50px 100px auto;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.upg {
+    height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    background-color: black;
+    background-image: url(Images/img5.jpg);
+    background-size: cover;
+    width: 90%;
+    position: relative;
+}
+.blackcover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #000000a3;
+    z-index: 0;
+}
+.uploadbanner {
+    display: grid;
+    grid-template-columns: auto 300px;
+    z-index: 1;
+}
+.UBheading {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+    color: white;
+    align-content: center;
+}
+.UBimg {
+    margin: auto;
+    height: 270px;
+    width: 270px;
+    background-image: url(Images/img5.jpg);
+    background-size: cover;
+    box-shadow: 0px 0px 20px black;
+    border: 5px solid white;
+}
+.UBHinfotxt{
+    font-size:15px;
+    padding-left:20px;
+}
+.UBH {
+    font-size: 40px;
+    padding-left: 20px;
+}
+.uploadBackDiv {
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    grid-template-rows: auto;
+    backdrop-filter: blur(7px);
+    z-index: 2;
+}
+.uploadPopUp {
+    margin: auto;
+    height: 600px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 0px 20px black;
+    transform: translateX(0px);
+    /* animation: toLeft 0.5s linear; */
+    position: relative;
+    display: grid;
+    grid-template-rows: 470px 120px 80px 80px 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.uploadPopUp::-webkit-scrollbar{
+    display: none;
+}
+.upPPclsbtn {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-size: 20px;
+}
+.CatStrip {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    overflow-x: auto;
+}
+.catstrbtn {
+    height: 50px;
+    width: 100px;
+    margin:5px;
+    background: #202020;
+    border: none;
+    border-radius: 25px;
+    color: white;
+}
+.upsechead{
+    width:100%;
+    display:grid;
+    grid-template-rows:auto;
+}
+.upsecheadtext{
+    margin:auto;
+    color:pink;
+    font-size:30px;
+}
+.imgboxouter {
+    width: 100%;
+    height: 580px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: white;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.imagesbox {
+    height: 250px;
+    width: 200px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto 100px;
+    grid-template-rows: auto 50px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px grey;
+    position:relative;
+    overflow:hidden;
+}
+.img {
+    height: 190px;
+    width: 190px;
+    margin: auto;
+    background-size: cover;
+    grid-column: 1 / span 2;
+}
+.imgboxlbs {
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    margin: auto;
+    text-align:center;
+}
+.upbtn {
+    height: 30px;
+    width: 90px;
+    border-radius: 10px;
+    background-color: white;
+    margin: auto;
+    color: white;
+    border: none;
+    background: linear-gradient(45deg, #fb30e7, #2bb3a6);
+}
+.viewbtn{
+   position:absolute;
+   height: 30px;
+   width: 100px;
+   left: 50px;
+   top: 110px;
+   border: none;
+   background-color: white;
+   border-radius: 15px;
+   color: darkmagenta;
+   z-index: 1;
+   box-shadow: 0px 0px 20px black;
+   transform: translateY(280px);
+   transition-duration:0.5s;
+}
+
+.imagesbox:hover .viewbtn {
+    transform: translateY(10px);
+}
+.imagesbox:hover .delbtn {
+    transform: translateY(-40px);
+}
+
+.imgcontainer {
+    border-bottom: 1px solid gray;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 50px 320px 50px;
+    margin-top: 50px;
+    align-items: center;
+    justify-items: center;
+}
+.popupback {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    display: none;
+    grid-template-columns: auto;
+}
+.viewpopup {
+    margin: auto;
+    height: 500px;
+    width: 330px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 50px 300px 50px 50px 50px;
+    justify-items: center;
+    box-shadow: 0px 0px 20px;
+}
+.vpptitle{
+    text-align:center;
+    margin:auto;
+}
+.image {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    background-size:cover;
+}
+.vpptitleimg {
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+}
+.vpplbs {
+    line-height: 50px;
+}
+.imgtitle {
+    font-size: 18px;
+    border: none;
+    width: auto;
+    text-align: center;
+}
+.fileuploaddiv {
+    display: grid;
+    grid-template-columns: 190px 90px;
+    align-items: center;
+}
+.fileupload {
+    width: 180px;
+    background-color: white;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    line-height: 30px;
+}
+input[type=file]::file-selector-button {
+    display: none;
+    display: none;
+}
+.selectimgbtn {
+    height: 30px;
+    width: 100px;
+    border: 3px solid #b9775b;
+    background-color: #202020;
+    color: white;
+    border-radius: 10px;
+}
+.catgridDiv {
+    height: 100px;
+    width: 280px;
+    display: grid;
+    grid-template-columns: 100px 160px;
+    grid-template-rows: 50px 50px;
+    margin: auto;
+    justify-content: center;
+}
+.inputtxts {
+    height: 30px;
+    width: 160px;
+    border-radius: 5px;
+    margin: auto;
+    border: 1px solid gray;
+}
+.inputlbs {
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    margin: auto;
+}
+.updatebtn {
+    height: 50px;
+    width: 100px;
+    background: linear-gradient(45deg, #666271, #d4997e);
+    border: none;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+}
+.addCategorybtn {
+    grid-column: 1 / span 2;
+    height: 30px;
+    width: 90px;
+    margin: auto;
+    background-color: #202020;
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+}
+.addnewcatBG{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: 3;
+    display: none;
+    grid-template-rows: auto;
+}
+.addnewcatPU {
+    height: 200px;
+    width: 300px;
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.NCOG{
+    display: grid;
+    grid-template-columns:auto;
+}
+.inputgriddiv {
+    height: 50px;
+    width: 280px;
+    display: grid;
+    grid-template-columns: 100px 160px;
+    margin: auto;
+    justify-content: center;
+}
+.errmsgs{
+    font-size: 10px;
+    color: red;
+}
+.newcathead {
+    width: 100%;
+    background: linear-gradient(45deg, #d4997e, #431a8b);
+    display: grid;
+    grid-column: 1 / span 2;
+}
+.newcatheading {
+    font-size: 20px;
+    margin: auto;
+    color: white;
+    font-family: sans-serif;
+}
+.NCCbtn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+.delppback {
+    position:fixed;
+    height:100vh;
+    width:100vw;
+    top:0px;
+    left:0px;
+    display:none;
+    grid-template-rows:auto;
+    z-index: 4;
+}
+.delpopup{
+    margin:auto;
+    height:300px;
+    width:400px;
+    display:grid;
+    grid-template-rows:auto 100px;
+    background-color:white;
+    border-radius:10px;
+    box-shadow:0px 0px 20px grey;
+}
+.delmsg{
+    margin:auto;
+    color: black;
+    font-size:20px;
+}
+.delppbtn {
+    margin: auto;
+    height: 50px;
+    width: 100px;
+    background: linear-gradient(45deg, #666271, #d4997e);
+    border-radius:25px;
+    color:white;
+    border: none;
+}
+@keyframes toLeft {
+    0% {
+        transform: translateX(calc(100vw + 400px));
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes toBottom {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(calc(100vh + 600px));
+    }
+}

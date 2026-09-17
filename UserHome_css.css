@@ -1,0 +1,305 @@
+﻿.uploadscreen {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px auto;
+    overflow: hidden;
+}
+
+.contant {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 400px auto;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.upg {
+    height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    background-color: black;
+    background-image: url(Images/img5.jpg);
+    background-size: cover;
+    width: 90%;
+    position: relative;
+}
+
+.blackcover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #000000a3;
+    z-index: 0;
+}
+
+.uploadbanner {
+    display: grid;
+    grid-template-columns: auto 300px;
+    z-index: 1;
+}
+
+.UBheading {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+    color: white;
+    align-content: center;
+}
+
+.UBH {
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+.UBHinfotxt {
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.UBimg {
+    margin: auto;
+    height: 270px;
+    width: 270px;
+    background-image: url(ImagesUser/Nature1.jpeg);
+    background-size: cover;
+    box-shadow: 0px 0px 20px black;
+    border: 5px solid white;
+}
+
+.CatStrip {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    overflow-x: auto;
+    align-items: center;
+}
+
+.catstrbtn {
+    height: 50px;
+    width: 100px;
+    margin: 5px;
+    background: #202020;
+    border: none;
+    border-radius: 25px;
+    color: white;
+}
+
+.imgboxouter {
+    width: 100%;
+    height: 580px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: white;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.imagesbox {
+    height: 250px;
+    width: 200px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto 100px;
+    grid-template-rows: auto 50px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px grey;
+    position: relative;
+    overflow: hidden;
+}
+
+.img {
+    height: 190px;
+    width: 190px;
+    margin: auto;
+    background-size: cover;
+    grid-column: 1 / span 2;
+}
+
+.imgboxlbs {
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.favbtn {
+    height: 30px;
+    width: 90px;
+    border-radius: 10px;
+    background-color: white;
+    margin: auto;
+    color: white;
+    border: none;
+    background: linear-gradient(45deg, #fb30e7, #2bb3a6);
+}
+
+.viewbtn {
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    left: 50px;
+    top: 110px;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    color: darkmagenta;
+    z-index: 1;
+    box-shadow: 0px 0px 20px black;
+    transform: translateY(280px);
+    transition-duration: 0.5s;
+}
+
+.imagesbox:hover .viewbtn {
+    transform: translateY(10px);
+}
+
+.imagesbox:hover .delbtn {
+    transform: translateY(-40px);
+}
+.viewback {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: none;
+    grid-template-rows: auto;
+    z-index: 4;
+}
+.viewimg{
+    height:500px;
+    width:500px;
+    
+    background-size:cover;
+    margin:auto;
+    position:relative;
+    box-shadow:0px 0px 20px black;
+    display:grid;
+    grid-template-rows:auto;
+}
+.viewclsbtn{
+    height:20px;
+    width:20px;
+    border-radius:10px;
+    border:none;
+    background-color:white;
+    color:red;
+    position:absolute;
+    top:10px;
+    right:10px;
+
+}
+.viewdetailbtn {
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    box-shadow:0px 0px 20px black;
+    transition-duration: 0.5s;
+}
+    .viewdetailbtn:hover {
+        background: linear-gradient(45deg, #ff6b9a, #ffca86);
+        color: white;
+        box-shadow: 0px 0px 20px;
+    }
+.imagedetails {
+    height: 250px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 30px 30px 30px;
+    margin: auto;
+    /* background-color: #202020; */
+    /* color: white; */
+    /* box-shadow: 0px 0px 20px white; */
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    /* overflow: auto;*/
+}
+.viewdetailspopup {
+    height: 80%;
+    width: 250px;
+    display: grid;
+    grid-template-columns: auto;
+    /* grid-template-rows: 250px 50px; */
+    margin: auto;
+    background-color: #202020;
+    color: white;
+    box-shadow: 0px 0px 20px white;
+    transform: scale(0);
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+    .viewdetailspopup::-webkit-scrollbar{
+        display:none;
+    }
+    .reviewhead {
+        margin: 10px auto;
+        color: white;
+        font-size: 18px;
+    }
+.reviewgrid {
+    height: 120px;
+    display: grid;
+    grid-template-rows: 30px 30px 60px;
+    margin: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+.givereview {
+    height: 200px;
+    width: 240px;
+    display: grid;
+    grid-template-rows: 30px 30px 60px;
+    margin: auto;
+    border: 1px solid gray;
+    padding: 10px;
+}
+.radiobuttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    width: 240px;
+    font-size: 12px;
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: 10px;
+}
+.review {
+    max-height: 60px;
+    min-height: 60px;
+    max-width: 200px;
+    min-width: 200px;
+    background: none;
+    margin: auto;
+    border: 1px solid gray;
+}
+.radios {
+    height: 12px;
+}
+.reviewbtn {
+    height: 30px;
+    width: 90px;
+    border-radius: 10px;
+    background-color: white;
+    margin: auto;
+    color: white;
+    border: none;
+    background: linear-gradient(45deg, #fb30e7, #2bb3a6);
+}
+
